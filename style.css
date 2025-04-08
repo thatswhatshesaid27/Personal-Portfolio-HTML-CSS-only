@@ -497,7 +497,7 @@ qualification_details{
     /* width: 640px; */
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 380px;
 }
 
 .qualification_profile_card{
