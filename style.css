@@ -14,6 +14,12 @@ html{
     padding: 0px;
 }
 
+.main_container{
+    box-sizing: border-box;
+    margin: auto;
+
+}
+
 .introduction{
     /* width: 1000px; */
     height: 752px;
@@ -161,8 +167,8 @@ h4{
 
 .profile_photo{
     position: absolute;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 570px;
     top: -250px;
     left: 600px;
     /* overflow: hidden; */
@@ -320,7 +326,7 @@ h4{
     width: 1200;
     height: 480px;
     gap: 21px;
-    margin-left: 100px;
+    margin-left: 80px;
     display: flex;
     /* overflow: scroll; */
 }
@@ -454,7 +460,7 @@ h4{
 
 }
 
-qualifications{
+.qualifications{
     height: 808px;
 }
 
@@ -474,6 +480,31 @@ qualification_details{
 .single_qualification{
     height: 120px;
     width: 300px;
+    position: relative;
+    padding-left: 25px;
+}
+.single_qualification::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+}
+.single_qualification::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 6px;
+    height: 100%;
+    width: 4px;
+    /* border-radius: 50%; */
+    background-color: rgb(0, 0, 0);
+}
+.single_qualification:last-of-type::after {
+    display: none;
 }
 
 .single_qualification h1{
@@ -566,12 +597,14 @@ qualification_details{
 .mail{
     display: flex;
     gap: 10px;
+    border: 5px solid black;
+    margin-left: 2px;
 }
 
-.mail span{
+.mail a{
     font-family: Poppins;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 26px;
     letter-spacing: 0px;
 
@@ -580,13 +613,13 @@ qualification_details{
 .phone{
     display: flex;
     gap: 10px;
-    margin-left: 60px;
+    margin-left: 40px;
 }
 
-.phone span{
+.phone a{
     font-family: Poppins;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 26px;
     letter-spacing: 0px;
    
@@ -597,7 +630,7 @@ qualification_details{
     height: 44px;
     gap: 10px;
     border-radius: 8px;
-    margin-left: 60px;
+    margin-left: 50px;
     background: rgba(9, 72, 180, 1);
 }
 
