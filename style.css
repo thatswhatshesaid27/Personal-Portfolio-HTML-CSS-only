@@ -45,6 +45,8 @@ html{
    
 }
 
+
+
 .frame4{
     width: 920px;
     display: flex;
@@ -227,9 +229,17 @@ h4{
     /* width: 14; */
     height: 466px;
     gap: 16px;
+
     /* padding-right: 120px;
     padding-left: 120px; */
 
+}
+
+.expertise_section{
+    box-sizing: border-box;
+    max-height: 466px;
+    display: flex;
+    overflow: scroll;
 }
 
 .expertise_heading{
@@ -282,13 +292,14 @@ h4{
     display: flex;
     gap: 40px;  
     box-sizing: border-box;
-    min-height: 180px;
+    max-height: 180px;
     overflow: scroll;
 }
 
 .softwares{
-    width: 120px;
-    height: 163px;
+    box-sizing: border-box;
+    max-width: 120px;
+    max-height: 163px;
     gap: 14.96px;
     margin-left: 100px;
     font-family: Lato;
@@ -312,14 +323,20 @@ h4{
 }
 
 .soft_skill{
-    width: 281px;
-    height: 100px;
+    box-sizing: border-box;
+    min-width: 150px;
+    min-height: 100px;
     gap: 16px;
     text-align: center;
     font-family: Poppins;
-    font-size: 32px;
+    font-size: 22px;
     line-height: 100%;
     letter-spacing: 0%;
+}
+
+.soft_skill img{
+    width: 80px;
+    height: 80px;
 }
 
 .project{
@@ -405,7 +422,8 @@ h4{
 }
 
 .experience{
-    height: 356px;
+    box-sizing: border-box;
+    max-height: 356px;
 }
 
 .experience_div{
@@ -415,10 +433,10 @@ h4{
     display: flex;
     box-sizing: border-box;
     max-width: 1200px;
-    min-height: 188px;
+    max-height: 230px;
     overflow: scroll;
     /* overflow-x: hidden; */
-    overflow-y: hidden;
+    /* overflow-y: hidden; */
 }
 
 .experience_card{
@@ -463,8 +481,8 @@ h4{
 
 .experience_details{
     box-sizing: border-box;
-    min-height: 10px;
-    min-width: 10px;
+    min-height: 188px;
+    min-width: 200px;
 }
 
 .experience_details p{
@@ -475,8 +493,8 @@ h4{
     line-height: 100%;
     letter-spacing: 0%;
     box-sizing: border-box;
-    min-height: 10px;
-    min-width: 10px;
+    max-height: 40px;
+    
 
 }
 
